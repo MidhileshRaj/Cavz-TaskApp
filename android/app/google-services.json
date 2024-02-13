@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "979367591574",
+    "project_id": "cavz-project",
+    "storage_bucket": "cavz-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:979367591574:android:45bedfb4a55003f5c58cb7",
+        "android_client_info": {
+          "package_name": "com.example.task_cavz"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKKFFJVMUnYyy1aRFw5AP0lFmLLCs-Y0I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
