@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task_cavz/utils/app_colors.dart';
 import 'package:task_cavz/utils/app_constants.dart';
 
 class HomePage extends StatelessWidget {
@@ -9,18 +10,32 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Scaffold(
       appBar: AppBar(
-        leading: const CircleAvatar(backgroundImage:AssetImage(AppConstant.profile),radius: 20 ,),
+        leading: const CircleAvatar(backgroundImage:AssetImage(AppConstant.profile),radius: 10 ,),
+        title: const Text("Hello Onky"),
+        actions: const [
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text("My wallet"),
+              Padding(
+                padding: EdgeInsets.only(right: 8.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Icon(Icons.wallet,color: AppColors.buttonColor,),
+                    Text("1000")
+                  ],
+                ),
+              )
+            ],
+          ),
+          Icon(Icons.menu,color: AppColors.buttonColor,)
+        ],
       ),
       body: SafeArea(child: Center(
         child: Column(
 
           children: [
-
-
-            const Padding(
-              padding: EdgeInsets.only(top: 20.0,bottom: 20),
-              child: Image(image: AssetImage(AppConstant.appbarimg)),
-            ),
           SizedBox(
               height: MediaQuery.sizeOf(context).height*.35,
               width: MediaQuery.sizeOf(context).width*.8,
@@ -35,6 +50,7 @@ class HomePage extends StatelessWidget {
                 );
               },),
             ),
+            SizedBox(height: 10,),
             SizedBox(width: MediaQuery.sizeOf(context).width*.9,
             child: Image(image: AssetImage(AppConstant.carImageBanner),),)
           ],
