@@ -13,6 +13,7 @@ class AppConstant{
   static const String mainBackground ="assets/images/main_bg.jpg";
   static const List<String> gridViewList =[gridimg1,gridimg2,gridimg3,gridimg4];
   static const String companyLogo ="assets/images/company_logo.png";
+  static const String profile ="assets/images/profile.png";
   static const String carImage ="assets/images/car_img.png";
   static const String carImageCarousal ="assets/images/RectangleCar.jpg";
   static const String appbarimg ="assets/images/Group 383.png";

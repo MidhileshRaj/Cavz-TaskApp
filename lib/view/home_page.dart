@@ -8,6 +8,9 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
+      appBar: AppBar(
+        leading: const CircleAvatar(backgroundImage:AssetImage(AppConstant.profile),radius: 20 ,),
+      ),
       body: SafeArea(child: Center(
         child: Column(
 
